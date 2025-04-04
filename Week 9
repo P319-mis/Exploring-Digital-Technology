@@ -1,0 +1,16 @@
+11th March, 2023
+echo "Opening Google Chrome..."
+# Check if Google Chrome is installed
+if command -v google-chrome &> /dev/null
+then
+    # Open Google Chrome
+    google-chrome "https://www.google.com" &
+else
+    echo "Google Chrome is not installed. Install it using:"
+    echo "sudo apt install google-chrome-stable"
+fi
+Give it execution permission:
+chmod +x open_chrome.sh
+./open_chrome.sh
+
+13th March - Shell command quiz 
