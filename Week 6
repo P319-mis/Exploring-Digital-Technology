@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Class: Linux System Administration
+# Topic: Path and Environment Variables
+# Author: Pragatika
+# Date: 18th feb and 20th feb
+# Description: This script demonstrates how to manage the PATH variable and set environment variables in Linux.
+
+# Step 1: Display the current PATH variable
+echo "Step 1: Displaying the current PATH variable..."
+echo "Current PATH:"
+echo $PATH
+echo "\n"
+
+# Step 2: Display all environment variables
+echo "Step 2: Listing all environment variables..."
+echo "\n"
+
+# Step 3: Modify the PATH variable (adding /usr/local/bin as an example)
+echo "Step 3: Modifying PATH by adding /usr/local/bin..."
+export PATH=$PATH:/usr/local/bin
+echo "Updated PATH:"
+echo $PATH
+echo "\n"
+
+# Step 4: Set a custom environment variable
+echo "Step 4: Setting a custom environment variable..."
+export MY_CUSTOM_ENV="HelloWorld"
+echo "Custom Environment Variable: MY_CUSTOM_ENV=$MY_CUSTOM_ENV"
+echo "\n"
+
+# Step 5: Display updated environment variables
+echo "Step 5: Verifying the updated environment variables..."
+env
+echo "\n"
+
+# Conclusion
+echo "Script execution completed. The PATH variable and environment variables have been successfully updated."
