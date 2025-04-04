@@ -1,0 +1,10 @@
+Topic: Computer Organization
+Summary of the Lesson:
+Today, we explored the fundamentals of Computer Organization, focusing on how a computer’s hardware components interact to execute tasks. We discussed key concepts such as the processor architecture, memory hierarchy, and input/output systems. A major takeaway was understanding the difference between computer organization (practical implementation) and computer architecture (design principles).
+Key Points Learned:
+The CPU is responsible for processing instructions using its control unit, ALU, and registers.
+Memory hierarchy includes registers, cache, RAM, and secondary storage, each affecting performance.
+Instruction execution cycle involves fetch, decode, execute, and store phases.
+Pipelining helps improve processing efficiency by executing multiple instructions simultaneously.
+Reflection:
+The lesson helped in understanding how different hardware components work together efficiently. The discussion on instruction cycles and pipelining was particularly interesting, as it showed how modern processors optimize speed.
