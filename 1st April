@@ -1,0 +1,43 @@
+1st April
+Notes on Server-Client Connection & Networking
+1. Understanding a Mail-Capable Machine
+- A mail-capable machine is a server or client system configured to send, receive, and process emails using SMTP, IMAP, or POP3 protocols.
+Server Role (Mail Server)
+- Stores and manages emails.
+- Uses SMTP (for sending) and IMAP/POP3 (for receiving).
+- Example: Postfix, Sendmail, or Exim.
+Client Role (Mail Client)
+- Requests emails from the server.
+- Example: Thunderbird, Outlook, Mutt (Linux CLI).
+2. Server – Giving Access to Storage (Storage Server)
+- A storage server provides file access over a network using NFS, SMB, or FTP protocols.
+Commands to Set Up a Storage Server in Linux:
+- lsblk
+- sudo apt install nfs-kernel-server
+?What Happens Underneath?
+- Physical IP Layer: The hardware (NIC – Network Interface Card) assigns a unique IP address to the machine.
+- sudo ifconfig  
+- Displays network interfaces and IP configurations.
+- Can be used to manually assign an IP.
+4. Server and Client Connection
+- HTTP (Hypertext Transfer Protocol) allows web communication.
+- Server-Client Relationship:
+- Server: Listens on a port (e.g., 80 for HTTP, 443 for HTTPS).
+- Client: Requests resources from the server using protocols.
+5. Application & Connection Layer Protocols
+- Application Layer Protocols:
+- HTTP, FTP, SMTP, IMAP (used for applications like web browsing and email).
+Connection Layer Protocols:
+- TCP (Transmission Control Protocol) – Reliable, connection-oriented.
+- UDP (User Datagram Protocol) – Fast, connectionless.
+6. Checking Network Connectivity
+-Ping Google’s DNS to test connectivity:
+bash
+- ping 8.8.8.8
+Check open ports on a machine:
+bash
+- netstat -tulnp
+7. Connection-Oriented vs Connectionless Protocols
+Type	Protocol	Features
+- Connection-Oriented	TCP	Reliable, ensures data delivery, ordered packets.
+- Connectionless	UDP	Fast, no error checking, unordered delivery.
