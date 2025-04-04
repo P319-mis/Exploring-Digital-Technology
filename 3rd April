@@ -1,0 +1,37 @@
+Creating a GitHub Account and Setting Up Git in Linux
+1. Install Git
+$ sudo apt install git
+This installs Git on the system.
+2. Configure Git with User Details
+$ git config --global user.name "Pragatika Mishra"
+$ git config --global user.email "pragatika.mishra23_ug@gmail.com"
+This sets up your Git identity for commits. 
+3. Initialize a Repository
+$ git init myrep
+Creates a new Git repository named myrep.
+4. Navigate to the Repository
+$ cd myrep
+Moves into the repository directory.
+5. Remove an Existing Directory (If Needed)
+rm -rf Pragatika
+Deletes the folder named Pragatika.
+6. Create or Edit Files Using Pico (Nano)
+$ pico file0.text
+Opens file0.text in the Pico (Nano) text editor for editing
+7. Add a File to the Repository
+git add file0.text
+Stages the file for commit. 
+8. Check the Status of the Repository
+$ git status
+Shows the current state of the repository.
+9. View Git Repository History (Graphical Interface)
+gitk
+Opens GitK, a visual history viewer for Git repositories
+10. Check Installed Git Version
+git --version
+Displays the installed Git version. 
+Summary
+- Installed Git and configured user details.
+- Created a repository and added files.
+- Checked Git status and history using git status and gitk.
+- Used Pico (Nano) for file editing and git add for tracking changes.
